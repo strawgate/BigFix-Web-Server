@@ -98,7 +98,7 @@ foreach ($File in get-childitem $StagingDir -include "*.css","*.js" -recurse -fi
 }
 
 #Fix HTML files
-foreach ($File in get-childitem $InputDir -include "*.html" -recurse -file ) {
+foreach ($File in get-childitem $StagingDir -include "*.html" -recurse -file ) {
     #Get the file
     $FileContents = get-content $File
 
